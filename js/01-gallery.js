@@ -21,9 +21,10 @@ galleryEl.innerHTML = markup;
 galleryEl.addEventListener('click', onOpenModal);
 
 let image = '';
+
 function createImgInModal(e) {
 	image = basicLightbox.create(`
-    <img src=${e.target.dataset.source} width="800" height="600">`);
+    <img src=${e.target.dataset.source}>`);
 }
 
 
