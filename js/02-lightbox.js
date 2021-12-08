@@ -10,7 +10,12 @@ const markup = galleryItems.map(item =>
 
 galleryEl.innerHTML = markup;
 
-new SimpleLightbox('.gallery a', { /* options */ });
+new SimpleLightbox('.gallery a', {
+	captionsData:'alt',
+	captionType:'alt',
+		captionDelay:250,
+	captionPosition:'bottom',
+ });
 
 
 
